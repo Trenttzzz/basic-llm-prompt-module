@@ -1,0 +1,33 @@
+---
+id: "4.9"
+title: "Apa itu structured output"
+session: 4
+order: 9
+layout: "default"
+duration: "4 menit"
+---
+
+# Structured output
+
+<Panel title="Definisi" tone="primary">
+  Meminta model mengeluarkan jawaban dalam **format terstruktur** yang bisa
+  dibaca mesin — JSON, tabel, YAML, atau skema tertentu — bukan teks bebas.
+</Panel>
+
+<Panel title="Kenapa penting untuk mahasiswa IT">
+  <BulletList
+    marker="dot"
+    items={[
+      "Output bisa langsung dipakai sistem lain tanpa parsing manual",
+      "Konsisten antar pemanggilan — penting untuk pipeline data",
+      "Memaksa model memikirkan struktur sebelum konten",
+      "Mudah diuji: skema valid atau tidak, field lengkap atau tidak"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  Prompt engineering tidak hanya untuk chat. Dengan structured output, prompt
+  jadi **bagian dari pipeline aplikasi** — LLM bisa berfungsi seperti
+  microservice yang menerima input bebas dan mengembalikan data terstruktur.
+</CalloutBox>

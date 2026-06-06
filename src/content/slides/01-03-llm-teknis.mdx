@@ -1,0 +1,34 @@
+---
+id: "1.3"
+title: "Apa itu LLM secara teknis"
+session: 1
+order: 3
+layout: "default"
+duration: "8 menit"
+---
+
+# Apa itu LLM secara teknis
+
+<Panel title="Tiga komponen nama">
+  <BulletList
+    marker="dot"
+    items={[
+      <><strong>Large</strong> — punya banyak parameter, dilatih dengan data sangat besar</>,
+      <><strong>Language</strong> — memproses teks sebagai urutan <em>token</em></>,
+      <><strong>Model</strong> — fungsi matematika yang memetakan konteks ke probabilitas token berikutnya</>
+    ]}
+  />
+</Panel>
+
+<Panel title="Inti cara kerja" tone="primary">
+  Memprediksi token berikutnya berdasarkan konteks sebelumnya.
+</Panel>
+
+```text
+Input teks → token → model → distribusi probabilitas → token berikutnya
+```
+
+<CalloutBox variant="warning">
+  LLM bukan database tanya-jawab. Tidak ada "kotak jawaban" yang dicari.
+  Model belajar pola bahasa, lalu memilih token demi token saat menjawab.
+</CalloutBox>

@@ -1,0 +1,39 @@
+---
+id: "3.5"
+title: "Format output mengurangi jawaban yang melebar"
+session: 3
+order: 5
+layout: "default"
+duration: "5 menit"
+---
+
+# Format output
+
+<Panel title="Bentuk format yang bisa diminta">
+  <BulletList
+    marker="dot"
+    items={[
+      "Tabel perbandingan",
+      "Poin bertingkat",
+      "Checklist",
+      "JSON",
+      "Outline presentasi",
+      "Rubrik penilaian",
+      "Rencana belajar harian",
+      "Pseudocode"
+    ]}
+  />
+</Panel>
+
+<Panel title="Contoh" tone="primary">
+  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Jawab dalam tabel dengan kolom:
+konsep, definisi singkat, contoh, kesalahan umum.`}
+  </pre>
+</Panel>
+
+<CalloutBox variant="tip">
+  Untuk mahasiswa IT, **structured output** sangat berguna — outputnya bisa
+  langsung dipakai untuk dokumentasi, input API, catatan belajar, atau
+  diteruskan ke tool lain tanpa parsing manual.
+</CalloutBox>

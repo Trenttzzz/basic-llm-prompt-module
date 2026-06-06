@@ -1,0 +1,39 @@
+---
+id: "2.10"
+title: "Decoding dan kenapa jawaban bisa berbeda"
+session: 2
+order: 10
+layout: "default"
+duration: "6 menit"
+---
+
+# Decoding
+
+<BulletList
+  marker="dot"
+  items={[
+    "Model menghasilkan skor untuk banyak kandidat token berikutnya",
+    "Decoding = proses memilih token dari kandidat tersebut",
+    <><strong>Temperature</strong> — mengatur tingkat variasi</>,
+    <><strong>Top-p</strong> — membatasi pilihan pada kandidat dengan probabilitas paling masuk akal</>,
+    "Output bisa berbeda karena proses pemilihan token tidak selalu deterministik"
+  ]}
+/>
+
+<Panel title="Contoh kandidat token berikutnya" tone="primary">
+
+```text
+"adalah"      42%
+"merupakan"   30%
+"bisa"        10%
+"terjadi"      5%
+...
+```
+
+</Panel>
+
+<CalloutBox variant="tip">
+  Untuk tugas faktual atau coding → temperature **rendah** lebih aman.
+  Untuk brainstorming → temperature **tinggi** kadang berguna. Di banyak
+  chatbot, pengaturan ini disembunyikan dari pengguna.
+</CalloutBox>

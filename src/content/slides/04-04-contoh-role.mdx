@@ -1,0 +1,24 @@
+---
+id: "4.4"
+title: "Contoh: role prompting"
+session: 4
+order: 4
+layout: "default"
+duration: "5 menit"
+---
+
+# Contoh: role yang bekerja vs tidak
+
+<PromptCompare
+  badLabel="Kurang berguna"
+  goodLabel="Bermanfaat"
+  bad={`Kamu adalah AI paling pintar di dunia.`}
+  good={`Bertindak sebagai reviewer kode Python.
+Fokus pada bug, edge case, kompleksitas, dan readability.`}
+/>
+
+<CalloutBox variant="info">
+  "Reviewer kode" mengarahkan model ke 4 dimensi konkret yang harus dicek.
+  "Paling pintar" tidak memberi tahu model apa yang harus difokuskan —
+  hasilnya tetap generik.
+</CalloutBox>

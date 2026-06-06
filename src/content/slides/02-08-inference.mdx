@@ -1,0 +1,41 @@
+---
+id: "2.8"
+title: "Inference berbeda dari training"
+session: 2
+order: 8
+layout: "default"
+duration: "5 menit"
+---
+
+# Inference ≠ Training
+
+<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+  <Panel title="Training" tone="primary">
+    <BulletList
+      marker="dot"
+      items={[
+        "Model belajar dari data",
+        "Bobot model berubah",
+        "Dilakukan oleh tim AI / lab",
+        "Mahal dan butuh waktu lama"
+      ]}
+    />
+  </Panel>
+  <Panel title="Inference" tone="accent">
+    <BulletList
+      marker="dot"
+      items={[
+        "Model sudah jadi, dipakai untuk menghasilkan output",
+        "Bobot model tidak berubah",
+        "Inilah yang kita lakukan saat chat",
+        "Cepat dan murah per request"
+      ]}
+    />
+  </Panel>
+</div>
+
+<CalloutBox variant="warning">
+  Riwayat chat masuk sebagai **konteks**, bukan otomatis jadi pengetahuan
+  permanen model. Memori produk (mis. "Saved memories" di ChatGPT) dan training
+  model adalah dua hal berbeda.
+</CalloutBox>

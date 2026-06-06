@@ -1,0 +1,67 @@
+---
+id: "3.9"
+title: "Template prompt utama untuk mahasiswa IT"
+session: 3
+order: 9
+layout: "default"
+duration: "5 menit"
+---
+
+# Template prompt utama
+
+<Panel title="Salin dan sesuaikan" tone="primary">
+  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Konteks:
+Aku mahasiswa [jurusan] semester [angka].
+Aku sedang belajar [topik] untuk [tujuan].
+Level pemahamanku saat ini: [jelaskan singkat].
+
+Tugas:
+Bantu aku [tugas spesifik].
+
+Batasan:
+Gunakan bahasa [gaya].
+Jangan [batasan penting].
+
+Format output:
+[format yang diinginkan]
+
+Kriteria jawaban bagus:
+[standar kualitas]
+
+Input:
+[tempel materi, kode, atau pertanyaan]`}
+  </pre>
+
+  <div className="mt-4">
+    <CopyTemplateButton
+      label="Salin template prompt utama"
+      template={`Konteks:
+Aku mahasiswa [jurusan] semester [angka].
+Aku sedang belajar [topik] untuk [tujuan].
+Level pemahamanku saat ini: [jelaskan singkat].
+
+Tugas:
+Bantu aku [tugas spesifik].
+
+Batasan:
+Gunakan bahasa [gaya].
+Jangan [batasan penting].
+
+Format output:
+[format yang diinginkan]
+
+Kriteria jawaban bagus:
+[standar kualitas]
+
+Input:
+[tempel materi, kode, atau pertanyaan]`}
+    />
+  </div>
+</Panel>
+
+<CalloutBox variant="info">
+  Boleh hapus bagian yang tidak perlu agar prompt tetap praktis. Yang penting:
+  kalian punya **kerangka mental** yang bisa dipanggil ulang setiap menulis
+  prompt baru.
+</CalloutBox>

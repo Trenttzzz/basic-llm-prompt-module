@@ -1,0 +1,40 @@
+---
+id: "1.1"
+title: "AI bukan cuma chatbot"
+session: 1
+order: 1
+layout: "default"
+duration: "5 menit"
+---
+
+# AI bukan cuma chatbot
+
+<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+  <Panel title="Yang sering tidak disadari sebagai AI">
+    <BulletList
+      marker="dot"
+      items={[
+        "Autocomplete di keyboard HP",
+        "Rekomendasi video YouTube atau TikTok",
+        "Spam filter di email",
+        "Face unlock"
+      ]}
+    />
+  </Panel>
+  <Panel title="Yang lebih sering disebut sebagai AI" tone="primary">
+    <BulletList
+      marker="dot"
+      items={[
+        "GitHub Copilot dan autocomplete di IDE",
+        "Chatbot: ChatGPT, Claude, Gemini",
+        "Image generator: Midjourney, DALL·E",
+        "Translator otomatis"
+      ]}
+    />
+  </Panel>
+</div>
+
+<CalloutBox variant="info">
+  Chatbot hanya satu bentuk generative AI. Banyak sistem AI lain bekerja tanpa
+  terlihat seperti percakapan.
+</CalloutBox>

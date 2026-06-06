@@ -1,0 +1,40 @@
+---
+id: "3.8"
+title: "Iterasi prompt sebagai proses debugging"
+session: 3
+order: 8
+layout: "default"
+duration: "6 menit"
+---
+
+# Prompt engineering mirip debugging
+
+<PipelineFlow
+  steps={[
+    { label: "Versi 1" },
+    { label: "Lihat output" },
+    { label: "Identifikasi masalah", tone: "accent" },
+    { label: "Tambah konteks / batasan", tone: "primary" },
+    { label: "Coba lagi" },
+    { label: "Simpan versi yang berhasil", tone: "primary" }
+  ]}
+/>
+
+<Panel title="Masalah umum yang sering muncul">
+  <BulletList
+    marker="cross"
+    items={[
+      "Output terlalu umum",
+      "Format tidak konsisten",
+      "Terlalu panjang",
+      "Gaya bahasa tidak sesuai",
+      "Ada fakta yang tidak bisa diverifikasi"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  Prompt yang gagal **bukan berarti pengguna gagal** — ada spesifikasi yang
+  belum lengkap. Sama seperti bug di kode: bug bukan kegagalan moral, hanya
+  petunjuk bahwa ada yang perlu diperbaiki.
+</CalloutBox>

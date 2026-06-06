@@ -1,0 +1,39 @@
+---
+id: "2.7"
+title: "Training LLM"
+session: 2
+order: 7
+layout: "default"
+duration: "6 menit"
+---
+
+# Tahap training LLM
+
+<PipelineFlow
+  steps={[
+    { label: "Data teks skala besar" },
+    { label: "Pretraining", tone: "primary" },
+    { label: "Instruction tuning", tone: "primary" },
+    { label: "RLHF / alignment", tone: "primary" },
+    { label: "Safety tuning" },
+    { label: "Deployment", tone: "accent" }
+  ]}
+/>
+
+<Panel title="Penjelasan singkat">
+  <BulletList
+    marker="dot"
+    items={[
+      <><strong>Pretraining</strong> — model belajar pola bahasa dan pengetahuan umum dari teks besar</>,
+      <><strong>Instruction tuning</strong> — model dilatih mengikuti instruksi, bukan sekadar melanjutkan teks</>,
+      <><strong>RLHF / alignment</strong> — model diarahkan agar jawabannya lebih membantu dan aman</>,
+      <><strong>Deployment</strong> — model dipasang di produk: chatbot, IDE, atau API</>
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  Pipeline ini disederhanakan — tiap perusahaan punya variannya sendiri.
+  Intinya: model dasar yang hanya bisa memprediksi teks **perlu dilatih lagi**
+  untuk jadi asisten yang mengikuti instruksi.
+</CalloutBox>

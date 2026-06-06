@@ -1,0 +1,30 @@
+---
+id: "3.7"
+title: "Quality bar dan self check"
+session: 3
+order: 7
+layout: "default"
+duration: "5 menit"
+---
+
+# Quality bar
+
+Quality bar = **standar minimal output**. Bukan sekadar minta jawaban,
+tapi memberi standar evaluasi.
+
+<Panel title="Contoh quality bar untuk debugging" tone="primary">
+  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Jawaban dianggap baik jika:
+1. Menjelaskan penyebab error.
+2. Menunjukkan baris kode yang bermasalah.
+3. Memberi versi perbaikan.
+4. Menjelaskan kenapa perbaikan itu bekerja.
+5. Menyebutkan satu edge case yang perlu diuji.`}
+  </pre>
+</Panel>
+
+<CalloutBox variant="tip">
+  Dengan quality bar yang eksplisit, model **menilai dirinya sendiri** sebelum
+  menyelesaikan jawaban. Pola ini berguna untuk coding, review tulisan, dan
+  analisis data.
+</CalloutBox>

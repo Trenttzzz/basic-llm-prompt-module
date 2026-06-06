@@ -1,0 +1,50 @@
+---
+id: "4.13"
+title: "Prompt untuk memahami paper atau dokumen"
+session: 4
+order: 13
+layout: "default"
+duration: "6 menit"
+---
+
+# Template memahami paper
+
+<Panel title="Template siap pakai" tone="primary">
+  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Aku akan memberi bagian dari paper.
+Tolong jawab hanya berdasarkan teks yang saya berikan.
+
+Tugas:
+1. Ringkas kontribusi utama.
+2. Jelaskan metode dalam bahasa sederhana.
+3. Sebutkan asumsi atau batasan yang terlihat.
+4. Tulis 5 istilah teknis yang perlu saya pelajari.
+5. Jika informasi tidak ada di teks, tulis "tidak disebutkan".
+
+Teks:
+[paste bagian paper]`}
+  </pre>
+
+  <div className="mt-4">
+    <CopyTemplateButton
+      label="Salin template paper"
+      template={`Aku akan memberi bagian dari paper.
+Tolong jawab hanya berdasarkan teks yang saya berikan.
+
+Tugas:
+1. Ringkas kontribusi utama.
+2. Jelaskan metode dalam bahasa sederhana.
+3. Sebutkan asumsi atau batasan yang terlihat.
+4. Tulis 5 istilah teknis yang perlu saya pelajari.
+5. Jika informasi tidak ada di teks, tulis "tidak disebutkan".
+
+Teks:
+[paste bagian paper]`}
+    />
+  </div>
+</Panel>
+
+<CalloutBox variant="tip">
+  Aturan **"hanya berdasarkan teks"** sangat penting — ini mengurangi risiko
+  model mengarang bagian paper yang sebenarnya tidak ada di sumber.
+</CalloutBox>

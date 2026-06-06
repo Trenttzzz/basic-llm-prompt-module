@@ -1,0 +1,36 @@
+---
+id: "2.2"
+title: "Tokenisasi"
+session: 2
+order: 2
+layout: "default"
+duration: "6 menit"
+---
+
+# Tokenisasi
+
+<BulletList
+  marker="dot"
+  items={[
+    "Model tidak membaca teks sebagai huruf atau kata utuh",
+    "Teks dipecah menjadi token",
+    "Token bisa berupa kata, bagian kata, tanda baca, spasi, atau simbol",
+    "Bahasa berbeda bisa punya jumlah token berbeda untuk kalimat yang panjangnya terlihat sama"
+  ]}
+/>
+
+<TokenBreakdown
+  text="aku belajar AI"
+  tokens={["aku", "belajar", "AI"]}
+/>
+
+<TokenBreakdown
+  text="internationalization"
+  tokens={["international", "ization"]}
+/>
+
+<CalloutBox variant="info">
+  Contoh di atas bukan tokenisasi yang persis sama di semua model. Setiap model
+  punya tokenizer berbeda. Intinya: model memproses *potongan teks*, bukan
+  makna manusia secara langsung.
+</CalloutBox>

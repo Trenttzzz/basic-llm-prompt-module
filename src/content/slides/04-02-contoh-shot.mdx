@@ -1,0 +1,32 @@
+---
+id: "4.2"
+title: "Contoh: zero shot vs few shot"
+session: 4
+order: 2
+layout: "default"
+duration: "5 menit"
+---
+
+# Contoh: klasifikasi sentimen
+
+<PromptCompare
+  badLabel="Zero shot"
+  goodLabel="Few shot"
+  bad={`Klasifikasikan sentimen kalimat ini:
+"Tugasnya susah, tapi materinya menarik."`}
+  good={`Klasifikasikan sentimen dengan label Positif, Negatif, atau Campuran.
+
+Contoh:
+"Materinya jelas dan dosennya enak" → Positif
+"Penjelasannya membingungkan" → Negatif
+"Tugasnya susah, tapi aku jadi paham" → Campuran
+
+Kalimat:
+"Tugasnya susah, tapi materinya menarik."`}
+/>
+
+<CalloutBox variant="tip">
+  Tanpa contoh, model bisa mengeluarkan label apa saja ("agak positif",
+  "mixed feelings", dst). Dengan contoh, model **mengikuti pola label** yang
+  sudah kita tentukan.
+</CalloutBox>

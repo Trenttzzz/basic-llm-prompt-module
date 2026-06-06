@@ -1,0 +1,36 @@
+---
+id: "2.3"
+title: "Kenapa token penting"
+session: 2
+order: 3
+layout: "default"
+duration: "5 menit"
+---
+
+# Kenapa token penting
+
+<BulletList
+  marker="dot"
+  items={[
+    "Context window dihitung dalam token",
+    "Biaya API biasanya dihitung dari jumlah token input dan output",
+    "Prompt panjang membawa lebih banyak konteks — tetapi instruksi utama bisa tenggelam",
+    "Output dibangun token demi token, jawaban panjang butuh lebih banyak inferensi"
+  ]}
+/>
+
+<ContextWindowBar
+  segments={[
+    { label: "System", weight: 8, tone: "system" },
+    { label: "Chat history", weight: 22, tone: "history" },
+    { label: "Dokumen", weight: 35, tone: "doc" },
+    { label: "Prompt terbaru", weight: 15, tone: "prompt" },
+    { label: "Ruang jawaban", weight: 20, tone: "answer" }
+  ]}
+/>
+
+<CalloutBox variant="warning">
+  Memasukkan seluruh dokumen panjang lalu bertanya sangat umum sering bikin
+  fokus model melebar. Lebih baik beri petunjuk **bagian mana** yang harus
+  dijawab.
+</CalloutBox>

@@ -1,0 +1,55 @@
+---
+id: "4.12"
+title: "Prompt untuk debugging kode"
+session: 4
+order: 12
+layout: "default"
+duration: "6 menit"
+---
+
+# Template debugging
+
+<Panel title="Template siap pakai" tone="primary">
+  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Bahasa: [Python, JavaScript, Java, C, atau lainnya]
+Tujuan kode: [jelaskan fungsi yang diharapkan]
+Error atau output saat ini: [paste error]
+Yang sudah dicoba: [jelaskan]
+
+Tugasmu:
+1. Identifikasi penyebab paling mungkin.
+2. Tunjukkan bagian kode yang bermasalah.
+3. Jelaskan kenapa bug terjadi.
+4. Berikan versi perbaikan.
+5. Sarankan test case untuk memastikan bug selesai.
+
+Kode:
+[paste kode]`}
+  </pre>
+
+  <div className="mt-4">
+    <CopyTemplateButton
+      label="Salin template debugging"
+      template={`Bahasa: [Python, JavaScript, Java, C, atau lainnya]
+Tujuan kode: [jelaskan fungsi yang diharapkan]
+Error atau output saat ini: [paste error]
+Yang sudah dicoba: [jelaskan]
+
+Tugasmu:
+1. Identifikasi penyebab paling mungkin.
+2. Tunjukkan bagian kode yang bermasalah.
+3. Jelaskan kenapa bug terjadi.
+4. Berikan versi perbaikan.
+5. Sarankan test case untuk memastikan bug selesai.
+
+Kode:
+[paste kode]`}
+    />
+  </div>
+</Panel>
+
+<CalloutBox variant="warning">
+  Selalu jalankan ulang kode hasil AI. Model bisa memperbaiki satu bug
+  sambil menambahkan bug lain. **Test case** adalah bagian penting dari
+  workflow ini.
+</CalloutBox>

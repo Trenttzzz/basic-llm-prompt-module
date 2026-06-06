@@ -1,0 +1,35 @@
+---
+id: "2.5"
+title: "Transformer dalam satu gambaran"
+session: 2
+order: 5
+layout: "default"
+duration: "5 menit"
+---
+
+# Transformer
+
+<BulletList
+  marker="dot"
+  items={[
+    "Arsitektur utama di balik banyak LLM modern",
+    "Memproses urutan token dengan mekanisme attention",
+    "Attention membantu model menentukan token mana yang relevan untuk memahami token lain",
+    "Model bisa menghubungkan kata yang berjauhan dalam satu konteks"
+  ]}
+/>
+
+<AttentionDemo
+  tokens={["Budi", "meletakkan", "laptopnya", "di", "meja", "karena", "baterainya", "habis"]}
+  links={[
+    { from: 6, to: 2, weight: 1.0 },
+    { from: 2, to: 0, weight: 0.7 }
+  ]}
+  caption="Attention menghubungkan 'baterainya' → 'laptopnya' → 'Budi'"
+/>
+
+<CalloutBox variant="info">
+  Untuk sekarang anggap attention sebagai cara model **memberi bobot** pada
+  bagian konteks yang dianggap penting. Detail matriks query/key/value bisa
+  dipelajari nanti kalau kalian ngoprek transformer sendiri.
+</CalloutBox>

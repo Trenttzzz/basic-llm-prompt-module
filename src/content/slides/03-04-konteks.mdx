@@ -1,0 +1,36 @@
+---
+id: "3.4"
+title: "Konteks yang benar membuat jawaban lebih tepat"
+session: 3
+order: 4
+layout: "default"
+duration: "5 menit"
+---
+
+# Konteks yang sering membantu
+
+<BulletList
+  marker="dot"
+  items={[
+    "Level pemahaman pengguna",
+    "Tujuan penggunaan output",
+    "Format tugas",
+    "Batas waktu atau durasi presentasi",
+    "Bahasa dan gaya tulisan",
+    "Materi yang sudah dipelajari",
+    "Kesalahan atau percobaan sebelumnya"
+  ]}
+/>
+
+<Panel title="Contoh prompt dengan konteks pemahaman" tone="primary">
+  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Aku paham konsep array, tetapi belum paham linked list.
+Jelaskan linked list dengan membandingkannya dengan array.`}
+  </pre>
+</Panel>
+
+<CalloutBox variant="warning">
+  Model tidak tahu kelas kalian, level kalian, atau standar dosen kalian —
+  kecuali diberi tahu. Banyak prompt terlalu pendek karena kita mengira
+  model bisa **menebak situasi**.
+</CalloutBox>

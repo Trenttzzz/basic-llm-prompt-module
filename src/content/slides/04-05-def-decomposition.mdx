@@ -1,0 +1,33 @@
+---
+id: "4.5"
+title: "Apa itu decomposition prompt"
+session: 4
+order: 5
+layout: "default"
+duration: "4 menit"
+---
+
+# Decomposition
+
+<Panel title="Definisi" tone="primary">
+  Meminta model **memecah tugas besar** menjadi sub-masalah yang lebih kecil
+  sebelum memberikan jawaban akhir. Tujuannya: membuat proses lebih terstruktur
+  dan output lebih stabil.
+</Panel>
+
+<Panel title="Kapan dipakai">
+  <BulletList
+    marker="dot"
+    items={[
+      "Tugas terlalu besar atau ambigu",
+      "Jawaban langsung sering meleset karena banyak variabel",
+      "Butuh trace pemikiran yang bisa diperiksa",
+      "Sebelum coding — pisahkan analisis requirement dari implementasi"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  Pola yang sama dengan cara manusia menyelesaikan masalah kompleks: jangan
+  langsung kode, pahami masalahnya dulu, baru susun solusi.
+</CalloutBox>

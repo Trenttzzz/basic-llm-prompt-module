@@ -1,0 +1,36 @@
+---
+id: "5.3"
+title: "Workflow coding dengan AI"
+session: 5
+order: 3
+layout: "default"
+duration: "5 menit"
+---
+
+# Workflow coding
+
+<PipelineFlow
+  orientation="vertical"
+  steps={[
+    { label: "Pahami requirement" },
+    { label: "Tulis solusi sendiri / pseudocode", tone: "accent" },
+    { label: "Minta AI review", tone: "primary" },
+    { label: "Jalankan kode" },
+    { label: "Tulis test case", tone: "accent" },
+    { label: "Perbaiki bug" },
+    { label: "Dokumentasikan pembelajaran" }
+  ]}
+/>
+
+<Panel title="Jebakan umum saat coding dengan AI">
+  <BulletList
+    marker="cross"
+    items={[
+      "Menyalin kode tanpa mengerti",
+      "Dependency atau library yang tidak sesuai versi project",
+      "Fungsi yang terlihat benar tapi tidak aman",
+      "Edge case yang terlewat",
+      "Kode yang lulus contoh tapi gagal di kasus nyata"
+    ]}
+  />
+</Panel>

@@ -1,0 +1,50 @@
+---
+id: "3.3"
+title: "Prompt buruk, lumayan, bagus"
+session: 3
+order: 3
+layout: "default"
+duration: "6 menit"
+---
+
+# Tiga tingkat prompt
+
+<div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+  <Panel title="Buruk" tone="accent">
+    <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Bantu aku belajar algoritma.`}
+    </pre>
+  </Panel>
+  <Panel title="Lumayan">
+    <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Jelaskan algoritma sorting
+untuk pemula.`}
+    </pre>
+  </Panel>
+  <Panel title="Bagus" tone="primary">
+    <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-200">
+{`Aku mahasiswa baru IT yang
+baru belajar Python.
+
+Jelaskan bubble sort,
+selection sort, dan
+insertion sort.
+
+Gunakan analogi menyusun
+kartu angka.
+
+Bandingkan cara kerja,
+kompleksitas waktu, dan
+kapan masing-masing cocok.
+
+Tutup dengan 3 pertanyaan
+latihan.`}
+    </pre>
+  </Panel>
+</div>
+
+<CalloutBox variant="tip">
+  Peningkatan kualitas bukan karena promptnya panjang — tapi karena instruksinya
+  **lebih terarah**: ada audiens, scope, gaya penjelasan, perbandingan, dan
+  closing yang jelas.
+</CalloutBox>

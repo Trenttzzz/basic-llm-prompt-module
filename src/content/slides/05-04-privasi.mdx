@@ -1,0 +1,40 @@
+---
+id: "5.4"
+title: "Privasi dan data sensitif"
+session: 5
+order: 4
+layout: "default"
+duration: "6 menit"
+---
+
+# Privasi dan data sensitif
+
+<Panel title="Jangan sembarang masukkan ke prompt" tone="accent">
+  <BulletList
+    marker="cross"
+    items={[
+      "API key",
+      "Password",
+      "Token akses",
+      "Data pribadi orang lain",
+      "Dokumen internal yang tidak boleh dibagikan",
+      "Source code private jika kebijakannya melarang"
+    ]}
+  />
+</Panel>
+
+<Panel title="Prinsip pengamanan dasar" tone="primary">
+  <BulletList
+    marker="check"
+    items={[
+      "Anggap prompt ke layanan eksternal bisa diproses di luar laptop kalian",
+      "Mask data sensitif sebelum meminta bantuan",
+      "Gunakan environment variable untuk secret — bukan hardcode di kode atau prompt"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  Relevan langsung saat kalian mulai deploy backend atau ngoprek project nyata.
+  Ini bukan teori etika — ini disiplin operasional.
+</CalloutBox>

@@ -1,0 +1,38 @@
+---
+id: "2.13"
+title: "RAG: memberi pengetahuan eksternal"
+session: 2
+order: 13
+layout: "default"
+duration: "7 menit"
+---
+
+# Retrieval Augmented Generation (RAG)
+
+<PipelineFlow
+  steps={[
+    { label: "Pertanyaan pengguna" },
+    { label: "Embed pertanyaan", tone: "primary" },
+    { label: "Cari di vector DB", tone: "primary" },
+    { label: "Tempel dokumen ke prompt", tone: "primary" },
+    { label: "LLM menjawab", tone: "accent" }
+  ]}
+/>
+
+<Panel title="Kapan berguna">
+  <BulletList
+    marker="dot"
+    items={[
+      "Chatbot dokumen internal",
+      "Tanya jawab laporan PDF",
+      "Sistem bantuan akademik atau kursus",
+      "Knowledge base organisasi"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  RAG bukan membuat model tahu segalanya. RAG hanya **memberi konteks tambahan**
+  yang relevan saat menjawab. Kualitas retrieval sangat menentukan kualitas
+  jawaban — kalau retrieval-nya jelek, jawabannya tetap jelek.
+</CalloutBox>

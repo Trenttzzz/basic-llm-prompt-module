@@ -1,0 +1,41 @@
+---
+id: "4.10"
+title: "Contoh: structured output JSON"
+session: 4
+order: 10
+layout: "default"
+duration: "5 menit"
+---
+
+# Contoh: skema JSON untuk ringkasan
+
+<Panel title="Output yang diminta" tone="primary">
+
+```json
+{
+  "summary": "...",
+  "key_points": ["...", "..."],
+  "uncertain_claims": ["..."],
+  "next_actions": ["..."]
+}
+```
+
+</Panel>
+
+<Panel title="Kapan dipakai">
+  <BulletList
+    marker="dot"
+    items={[
+      "Output dipakai sistem lain (API, automation, dashboard)",
+      "Data diekstrak dari teks bebas",
+      "Jawaban perlu konsisten untuk banyak input berbeda",
+      "Hasil akan dibandingkan antar peserta atau antar versi"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="tip">
+  Field <code>uncertain_claims</code> menarik — kita memaksa model **memisahkan**
+  apa yang dia yakini dengan apa yang masih asumsi. Pola sederhana untuk
+  mengurangi efek hallucination.
+</CalloutBox>

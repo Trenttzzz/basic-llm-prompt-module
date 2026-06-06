@@ -1,0 +1,33 @@
+---
+id: "2.11"
+title: "Hallucination sebagai konsekuensi teknis"
+session: 2
+order: 11
+layout: "default"
+duration: "6 menit"
+---
+
+# Hallucination
+
+<Panel title="Definisi" tone="primary">
+  Hallucination terjadi ketika model menghasilkan informasi yang **salah,
+  tidak ada, atau tidak terverifikasi** — tetapi disampaikan dengan lancar.
+</Panel>
+
+<Panel title="Penyebab umum">
+  <BulletList
+    marker="dot"
+    items={[
+      "Model tidak punya akses ke sumber terbaru",
+      "Prompt kurang konteks",
+      "Pertanyaan meminta detail yang tidak tersedia",
+      "Model menggabungkan pola yang mirip dari data training",
+      "Model lebih dioptimalkan untuk kelancaran bahasa daripada verifikasi fakta"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="info">
+  Hallucination bukan kesalahan misterius. Ia hasil langsung dari cara model
+  bekerja — model **mengisi kekosongan** dengan pola yang tampak masuk akal.
+</CalloutBox>

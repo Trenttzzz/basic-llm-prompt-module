@@ -1,0 +1,34 @@
+---
+id: "1.4"
+title: "LLM adalah prediktor token, bukan mesin kebenaran"
+session: 1
+order: 4
+layout: "default"
+duration: "7 menit"
+---
+
+# Prediktor token, bukan mesin kebenaran
+
+<BulletList
+  marker="dot"
+  items={[
+    "LLM menghasilkan jawaban yang terlihat natural karena ia sangat baik memodelkan pola bahasa",
+    "Natural bukan berarti benar",
+    "Output yang lancar bisa tetap salah jika konteks kurang, data usang, atau model menebak"
+  ]}
+/>
+
+<Panel title="Contoh kasus" tone="accent">
+  <p className="font-mono text-sm text-zinc-300">
+    Prompt: <em>Sebutkan paper terbaru tentang topik X.</em>
+  </p>
+  <p className="mt-2 text-sm text-zinc-400">
+    Masalah: model bisa membuat judul, penulis, atau tahun yang
+    sebenarnya tidak ada — dan menyajikannya dengan format yang meyakinkan.
+  </p>
+</Panel>
+
+<CalloutBox variant="info" title="Pondasi memahami hallucination">
+  Objective model adalah membuat kelanjutan teks yang masuk akal,
+  bukan melakukan verifikasi fakta seperti search engine.
+</CalloutBox>

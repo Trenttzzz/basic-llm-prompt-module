@@ -1,0 +1,29 @@
+---
+id: "2.1"
+title: "Pipeline LLM saat menerima prompt"
+session: 2
+order: 1
+layout: "default"
+duration: "5 menit"
+---
+
+# Pipeline LLM saat menerima prompt
+
+<PipelineFlow
+  steps={[
+    { label: "Teks pengguna" },
+    { label: "Tokenisasi" },
+    { label: "Embedding" },
+    { label: "Transformer", tone: "primary", hint: "attention" },
+    { label: "Logits" },
+    { label: "Probabilitas" },
+    { label: "Decoding" },
+    { label: "Jawaban", tone: "accent" }
+  ]}
+/>
+
+<CalloutBox variant="info">
+  Ini peta mental untuk Sesi 2. Kita akan bahas setiap blok satu per satu —
+  tidak terlalu matematis, tapi cukup jelas supaya kalian tahu apa yang
+  sebenarnya terjadi setiap kali menekan Enter di ChatGPT.
+</CalloutBox>

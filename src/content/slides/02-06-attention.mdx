@@ -1,0 +1,37 @@
+---
+id: "2.6"
+title: "Attention dengan contoh sederhana"
+session: 2
+order: 6
+layout: "default"
+duration: "5 menit"
+---
+
+# Attention — contoh sederhana
+
+<Panel title="Kalimat">
+  <p className="font-mono text-zinc-200">
+    Ayu membawa buku ke kelas karena ia akan presentasi.
+  </p>
+</Panel>
+
+<Panel title="Pertanyaan" tone="primary">
+  <p className="font-mono text-zinc-200">
+    Siapa yang akan presentasi?
+  </p>
+</Panel>
+
+<AttentionDemo
+  tokens={["Ayu", "membawa", "buku", "ke", "kelas", "karena", "ia", "akan", "presentasi"]}
+  links={[
+    { from: 6, to: 0, weight: 1.0 },
+    { from: 8, to: 0, weight: 0.6 }
+  ]}
+  caption="Token 'ia' dihubungkan kembali ke 'Ayu' melalui attention"
+/>
+
+<CalloutBox variant="info">
+  Pada model besar, attention terjadi di **banyak layer dan banyak head**
+  sekaligus. Polanya jauh lebih kompleks dari satu panah seperti ini, tapi
+  intuisinya tetap sama: bobot pada token yang membantu menjawab.
+</CalloutBox>

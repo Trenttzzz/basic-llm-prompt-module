@@ -1,0 +1,35 @@
+---
+id: "1.5"
+title: "Demo: prompt umum vs prompt berkonteks"
+session: 1
+order: 5
+layout: "default"
+duration: "10 menit"
+---
+
+# Prompt umum vs prompt berkonteks
+
+<PromptCompare
+  badLabel="Prompt umum"
+  goodLabel="Prompt berkonteks"
+  bad="Jelaskan database."
+  good={`Jelaskan database untuk mahasiswa baru IT yang baru belajar pemrograman.
+Gunakan analogi perpustakaan, lalu beri contoh tabel sederhana
+mahasiswa dan mata kuliah.`}
+/>
+
+<Panel title="Aktivitas — jalankan dua prompt ini">
+  <BulletList
+    marker="spark"
+    items={[
+      "Bandingkan panjang dan kedalaman penjelasan",
+      "Perhatikan apakah analogi muncul di prompt umum",
+      "Catat hal-hal yang muncul karena adanya konteks audiens"
+    ]}
+  />
+</Panel>
+
+<CalloutBox variant="tip">
+  Model yang sama bisa terasa bodoh atau sangat membantu — tergantung kualitas
+  instruksi. Inilah jembatan ke prompt engineering.
+</CalloutBox>

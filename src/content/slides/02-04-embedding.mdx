@@ -1,0 +1,38 @@
+---
+id: "2.4"
+title: "Embedding sebagai representasi makna"
+session: 2
+order: 4
+layout: "default"
+duration: "6 menit"
+---
+
+# Embedding
+
+<BulletList
+  marker="dot"
+  items={[
+    "Setelah tokenisasi, token diubah menjadi vektor angka",
+    "Vektor ini disebut embedding",
+    "Token atau kalimat dengan makna mirip → posisinya berdekatan di ruang vektor",
+    "Embedding dipakai di model bahasa, juga di semantic search dan RAG"
+  ]}
+/>
+
+<EmbeddingPlot
+  points={[
+    { label: "kuliah", x: 1.2, y: 4.0, group: "a" },
+    { label: "kampus", x: 1.6, y: 3.6, group: "a" },
+    { label: "dosen", x: 1.0, y: 3.3, group: "a" },
+    { label: "mahasiswa", x: 1.8, y: 4.2, group: "a" },
+    { label: "pisang", x: 4.5, y: 1.1, group: "b" },
+    { label: "hujan", x: 4.8, y: 1.6, group: "c" },
+    { label: "petir", x: 4.4, y: 2.0, group: "c" }
+  ]}
+  caption="Kata yang maknanya dekat → posisinya berdekatan di ruang vektor"
+/>
+
+<CalloutBox variant="info">
+  Embedding bukan kamus arti kata. Ia representasi numerik yang **dipelajari
+  dari data**. Konsep ini juga yang dipakai vector database di project RAG.
+</CalloutBox>
