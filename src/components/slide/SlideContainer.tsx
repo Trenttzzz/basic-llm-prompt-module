@@ -15,7 +15,7 @@ export function SlideContainer({
   return (
     <div
       className={cn(
-        "relative mx-auto w-full max-w-7xl overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-2xl backdrop-blur-sm",
+        "relative mx-auto w-full max-w-7xl overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/80 shadow-2xl backdrop-blur-sm animate-slide-in",
         "aspect-video max-h-[85vh]",
         "flex flex-col",
         layout === "title" && "items-center justify-center text-center",

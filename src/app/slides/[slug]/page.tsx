@@ -43,7 +43,7 @@ export default async function SlidePage({ params }: PageProps) {
       currentIndex={currentIndex}
       total={total}
     >
-      <SlideContainer layout={slide.layout}>
+      <SlideContainer layout={slide.layout} key={slug}>
         <SlideContent />
       </SlideContainer>
     </SlideShell>
