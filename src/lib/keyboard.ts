@@ -19,6 +19,26 @@ export function useKeyboardNavigation(
     routerRef.current = router;
   }, [slides, currentSlug, router]);
 
+  // Prefetch slide berikutnya dan sebelumnya untuk navigasi cepat
+  useEffect(() => {
+    const r = routerRef.current;
+    const list = slidesRef.current;
+    const slug = slugRef.current;
+    const idx = list.findIndex((s) => s.slug === slug);
+    if (idx === -1) return;
+
+    // Prefetch next slide
+    if (idx < list.length - 1) {
+      r.prefetch(`/slides/${list[idx + 1].slug}`);
+    }
+    // Prefetch prev slide
+    if (idx > 0) {
+      r.prefetch(`/slides/${list[idx - 1].slug}`);
+    }
+    // Prefetch overview
+    r.prefetch("/overview");
+  }, []);
+
   useEffect(() => {
     const navigate = (direction: "next" | "prev" | "overview" | "home") => {
       const r = routerRef.current;
@@ -42,7 +62,7 @@ export function useKeyboardNavigation(
           : Math.max(idx - 1, 0);
 
       if (newIdx !== idx) {
-        r.push(`/slides/${list[newIdx].slug}`);
+        r.push(`/slides/${list[newIdx].slug}`, { scroll: false });
       }
     };
 

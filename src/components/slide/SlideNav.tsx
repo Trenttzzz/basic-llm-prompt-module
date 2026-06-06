@@ -28,6 +28,7 @@ export function SlideNav({ prev, next, currentIndex, total }: SlideNavProps) {
             href={`/slides/${prev.slug}`}
             className={baseBtn}
             aria-label="Slide sebelumnya"
+            prefetch={true}
           >
             <ChevronLeft className="h-4 w-4" />
           </Link>
@@ -42,6 +43,7 @@ export function SlideNav({ prev, next, currentIndex, total }: SlideNavProps) {
           className={baseBtn}
           aria-label="Lihat semua slide"
           title="Overview (O)"
+          prefetch={true}
         >
           <LayoutGrid className="h-4 w-4" />
           <span className="tabular-nums">
@@ -54,6 +56,7 @@ export function SlideNav({ prev, next, currentIndex, total }: SlideNavProps) {
             href={`/slides/${next.slug}`}
             className={baseBtn}
             aria-label="Slide berikutnya"
+            prefetch={true}
           >
             <ChevronRight className="h-4 w-4" />
           </Link>
